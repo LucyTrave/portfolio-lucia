@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Case study del Gestor Escuela de Teatro, aplicación web PHP y MySQL con roles de Administrador, Profesor y Alumno.">
+    <meta name="theme-color" content="#0b1220">
+    <meta name="color-scheme" content="light dark">
+    <meta property="og:title" content="Gestor Escuela de Teatro | Case study">
+    <meta property="og:description" content="Aplicación PHP y MySQL con roles de Administración, Profesorado y Alumnado.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://lucytrave.github.io/portfolio-lucia/projects/gestor-escuela-teatro.html">
+    <link rel="canonical" href="https://lucytrave.github.io/portfolio-lucia/projects/gestor-escuela-teatro.html">
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+    <title>Gestor Escuela de Teatro | Case study de Lucía Jiménez Travé</title>
+    <script src="../js/theme-init.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" data-header>
+        <div class="container header-inner">
+            <a class="brand" href="../index.html" aria-label="Volver al portfolio de Lucía Jiménez Travé">
+                <span class="brand-mark" aria-hidden="true">LJ</span>
+                <span>Lucía Jiménez Travé</span>
+            </a>
+            <div class="case-header-tools">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Activar modo oscuro">
+                    <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.3A8.4 8.4 0 0 1 8.7 3.8 8.5 8.5 0 1 0 20.2 15.3Z"/></svg>
+                    <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                    <span class="sr-only" data-theme-label>Activar modo oscuro</span>
+                </button>
+                <a class="back-link" href="../index.html#proyectos">← Volver a proyectos</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenido" class="case-study">
+        <section class="case-hero" aria-labelledby="case-title">
+            <div class="container case-hero-grid">
+                <div>
+                    <p class="eyebrow">Case study · Proyecto destacado</p>
+                    <h1 id="case-title">Gestor Escuela de Teatro</h1>
+                    <p class="case-lead">Aplicación web de gestión para coordinar alumnos, grupos, salas, clases, eventos y asistencia mediante experiencias diferenciadas por rol.</p>
+                    <ul class="tech-list" aria-label="Tecnologías del proyecto">
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <figure class="case-cover">
+                    <img src="../assets/img/gestor-panel-administracion.webp" width="1600" height="652" alt="Panel de administración con resumen de la actividad de la escuela">
+                    <figcaption>Panel de Administración de la versión actual del proyecto.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="container case-layout">
+            <aside class="case-index" aria-labelledby="case-index-title">
+                <h2 id="case-index-title">Contenido</h2>
+                <nav aria-label="Índice del caso de estudio">
+                    <a href="#resumen">Resumen</a>
+                    <a href="#problema">Problema y usuarios</a>
+                    <a href="#alcance">Alcance del sistema</a>
+                    <a href="#participacion">Mi participación</a>
+                    <a href="#arquitectura">Arquitectura</a>
+                    <a href="#datos">Base de datos</a>
+                    <a href="#retos">Retos y decisiones</a>
+                    <a href="#mejoras">Mejoras realizadas</a>
+                    <a href="#capturas">Capturas</a>
+                    <a href="#aprendizajes">Aprendizajes</a>
+                    <a href="#estado">Estado actual</a>
+                </nav>
+            </aside>
+
+            <article class="case-content">
+                <section id="resumen">
+                    <p class="section-kicker">01 · Resumen ejecutivo</p>
+                    <h2>Una aplicación completa para un dominio con reglas reales</h2>
+                    <p>El Gestor Escuela de Teatro nació en un contexto formativo y de prácticas. Su objetivo es reunir en una sola aplicación procesos que afectan a administración, profesorado y alumnado.</p>
+                    <dl class="project-facts">
+                        <div><dt>Tipo</dt><dd>Aplicación web de gestión</dd></div>
+                        <div><dt>Contexto</dt><dd>Proyecto formativo y de prácticas</dd></div>
+                        <div><dt>Mi foco inicial</dt><dd>Área de Administración</dd></div>
+                        <div><dt>Evolución posterior</dt><dd>Mejoras personales en los tres roles</dd></div>
+                    </dl>
+                </section>
+
+                <section id="problema">
+                    <p class="section-kicker">02 · Problema y usuarios</p>
+                    <h2>Coordinar información y acciones entre tres perfiles</h2>
+                    <p>Una escuela necesita mantener conectados horarios, espacios, grupos, matrículas, eventos y asistencia. La aplicación diferencia qué puede consultar y gestionar cada perfil para reducir errores y ofrecer a cada usuario solo las acciones que necesita.</p>
+                    <div class="role-grid">
+                        <article><h3>Administrador</h3><p>Gestiona alumnos, grupos, salas, matrículas, clases y eventos.</p></article>
+                        <article><h3>Profesor</h3><p>Consulta sus grupos y clases, registra asistencia y trabaja con observaciones.</p></article>
+                        <article><h3>Alumno</h3><p>Consulta clases, avisa ausencias y gestiona recuperaciones mediante tokens.</p></article>
+                    </div>
+                </section>
+
+                <section id="alcance">
+                    <p class="section-kicker">03 · Alcance del sistema</p>
+                    <h2>Funcionalidades presentes en la aplicación</h2>
+                    <p>Estas funciones describen el alcance colectivo del proyecto y no se atribuyen íntegramente a una sola persona.</p>
+                    <ul class="feature-list">
+                        <li>Autenticación y redirección según rol.</li>
+                        <li>Dashboard y gestión de alumnos posibles y matriculados.</li>
+                        <li>Gestión de grupos, salas, horarios y clases recurrentes.</li>
+                        <li>Eventos especiales con inscripciones y profesor responsable.</li>
+                        <li>Registro de asistencia de clases y eventos.</li>
+                        <li>Flujo de ausencias, tokens y recuperación de clases.</li>
+                        <li>Validaciones de aforo y conflictos de horario o sala.</li>
+                    </ul>
+                </section>
+
+                <section id="participacion">
+                    <p class="section-kicker">04 · Participación</p>
+                    <h2>Qué pertenece al proyecto y qué puedo demostrar como aportación</h2>
+                    <div class="ownership-grid">
+                        <article>
+                            <h3>Participación inicial</h3>
+                            <p>Trabajé principalmente en la vista y las funcionalidades del rol Administrador dentro de un proyecto desarrollado en equipo.</p>
+                        </article>
+                        <article>
+                            <h3>Trabajo posterior</h3>
+                            <p>Continué el proyecto personalmente mediante corrección de errores, mantenimiento y mejoras funcionales y de interfaz en Administración, Profesor y Alumno.</p>
+                        </article>
+                    </div>
+                    <p class="note">La case study evita atribuirme autenticación, base de datos, tokens u otras funciones iniciales sin evidencia individual suficiente.</p>
+                </section>
+
+                <section id="arquitectura">
+                    <p class="section-kicker">05 · Arquitectura</p>
+                    <h2>Estructura monolítica inspirada en MVC</h2>
+                    <p>La aplicación utiliza un punto de entrada común, enrutado manual, controladores por área y vistas PHP separadas. Las consultas MySQL se realizan mediante <code>mysqli</code> desde los controladores.</p>
+                    <ol class="architecture-flow" aria-label="Flujo de una petición">
+                        <li><span>Navegador</span><small>Petición del usuario</small></li>
+                        <li><span>index.php</span><small>Front controller</small></li>
+                        <li><span>Router</span><small>Selecciona la ruta</small></li>
+                        <li><span>Controlador</span><small>Lógica y consultas</small></li>
+                        <li><span>Vista + MySQL</span><small>Respuesta y datos</small></li>
+                    </ol>
+                    <p>No la presento como un MVC completo: los modelos tienen poco desarrollo y parte de la lógica y las consultas permanecen en controladores extensos.</p>
+                </section>
+
+                <section id="datos">
+                    <p class="section-kicker">06 · Base de datos</p>
+                    <h2>Entidades conectadas mediante relaciones y restricciones</h2>
+                    <p>El modelo incluye usuarios, profesores, administradores, alumnos, grupos, salas, clases, asistencias, tokens, recuperaciones, eventos e inscripciones.</p>
+                    <div class="data-relations">
+                        <span>Usuario → Rol</span>
+                        <span>Profesor → Grupos</span>
+                        <span>Grupo → Clases</span>
+                        <span>Alumno → Asistencia</span>
+                        <span>Ausencia → Token → Recuperación</span>
+                        <span>Evento → Inscripción → Asistencia</span>
+                    </div>
+                </section>
+
+                <section id="retos">
+                    <p class="section-kicker">07 · Retos y decisiones</p>
+                    <h2>Mantener coherencia entre permisos, datos e interfaz</h2>
+                    <div class="challenge-list">
+                        <article><h3>Permisos por rol</h3><p>Las rutas y acciones deben comprobar la sesión y el perfil antes de mostrar o modificar datos.</p></article>
+                        <article><h3>Conflictos de agenda</h3><p>Las clases necesitan validaciones para evitar solapamientos de profesor y sala.</p></article>
+                        <article><h3>Asistencia reutilizable</h3><p>El pase de lista se adaptó para trabajar tanto con clases ordinarias como con eventos especiales.</p></article>
+                        <article><h3>Evolución de la base de datos</h3><p>Las mejoras de eventos exigieron mantener sincronizados código, relaciones y proceso de instalación.</p></article>
+                    </div>
+                </section>
+
+                <section id="mejoras">
+                    <p class="section-kicker">08 · Mejoras personales verificables</p>
+                    <h2>Evolución posterior del proyecto</h2>
+                    <ul class="feature-list">
+                        <li>Mejoras en gestión de grupos y creación de cursos.</li>
+                        <li>Rediseño de la presentación de grupos y salas.</li>
+                        <li>Asignación de profesor responsable en eventos especiales.</li>
+                        <li>Filtrado de eventos para cada profesor.</li>
+                        <li>Incorporación de eventos al panel del Profesor.</li>
+                        <li>Pase de lista de eventos mediante un componente reutilizable.</li>
+                        <li>Corrección del instalador para crear el esquema necesario.</li>
+                    </ul>
+                </section>
+
+                <section id="capturas">
+                    <p class="section-kicker">09 · Interfaz real</p>
+                    <h2>Capturas de los tres roles</h2>
+                    <p>Las imágenes proceden de la versión publicada en el repositorio y utilizan únicamente datos de demostración.</p>
+                    <div class="gallery">
+                        <figure>
+                            <img src="../assets/img/gestor-acceso.webp" width="731" height="574" loading="lazy" alt="Pantalla de acceso del Gestor Escuela de Teatro">
+                            <figcaption>Acceso con redirección según el rol.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../assets/img/gestor-grupos.webp" width="1600" height="795" loading="lazy" alt="Vista de gestión de grupos con horarios, salas y profesorado">
+                            <figcaption>Gestión de grupos desde Administración.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../assets/img/gestor-profesorado.webp" width="1600" height="795" loading="lazy" alt="Panel del profesorado con accesos a clases, asistencia y agenda">
+                            <figcaption>Panel de Profesorado.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../assets/img/gestor-alumnado.webp" width="1600" height="419" loading="lazy" alt="Panel del alumnado con próximas clases y calendario">
+                            <figcaption>Panel de Alumnado.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../assets/img/gestor-tokens.webp" width="1600" height="677" loading="lazy" alt="Información del sistema de tokens y recuperación de clases">
+                            <figcaption>Sistema de tokens y recuperaciones.</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section id="aprendizajes">
+                    <p class="section-kicker">10 · Aprendizajes</p>
+                    <h2>Qué me ha aportado trabajar sobre una aplicación existente</h2>
+                    <p>El proyecto me ha permitido comprender mejor cómo una decisión aparentemente local puede afectar a controladores, vistas, rutas y base de datos. También ha reforzado la importancia de comprobar permisos en servidor, documentar los cambios y mantener una instalación reproducible.</p>
+                </section>
+
+                <section id="estado">
+                    <p class="section-kicker">11 · Estado actual</p>
+                    <h2>Repositorio público y ejecución local</h2>
+                    <p>El código, las instrucciones de instalación y las capturas están disponibles en GitHub. La aplicación necesita PHP y MySQL, por lo que no se ofrece una demo pública en GitHub Pages.</p>
+                    <p>El repositorio se presenta como proyecto en mejora continua. Antes de desplegarlo en un servidor público conviene completar una revisión específica de configuración, seguridad y datos de demostración.</p>
+                    <div class="case-actions">
+                        <a class="button button-primary" href="https://github.com/LucyTrave/Gestor-Escuela-de-Teatro" target="_blank" rel="noreferrer">Ver repositorio</a>
+                        <a class="button button-secondary" href="mailto:lucytrave@gmail.com?subject=Gestor%20Escuela%20de%20Teatro">Contactar</a>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span data-current-year>2026</span> Lucía Jiménez Travé</p>
+            <a href="../index.html">Volver al portfolio</a>
+        </div>
+    </footer>
+</body>
+</html>

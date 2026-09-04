@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lucytrave.github.io/portfolio-lucia/sitemap.xml
